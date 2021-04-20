@@ -1,0 +1,7 @@
+body {
+  background-color: hsl(0, 6%, 91%);
+  font-size: 1rem;
+}
+.movie_year {
+  color: coral;
+}

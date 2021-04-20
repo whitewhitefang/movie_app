@@ -7,8 +7,8 @@ const rootEl = document.getElementById('root');
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    </React.StrictMode>,
-    rootEl
+  </React.StrictMode>,
+  rootEl
 )
 
 if (module.hot) {

@@ -5,16 +5,16 @@ import './movie.css';
 function Movie({ id, year, title, summary, poster, genres }) {
   return (
     <div key={id} className="movie">
-      <img src={ poster } alt={ title } title={ title } style={{border: "3px solid grey"}}/>
+      <img src={ poster } alt={ title } title={ title } />
       <div className="movie_column">
-        <h3 className="movie_title" style={{color: "red", fontSize: "30px"}}>{ title }</h3>
+        <h3 className="movie_title">{ title }</h3>
         <h5 className="movie_year">{ year }</h5>
-        <ul className="genres">
+        <ul className="movie_genres">
           {genres.map((genre, index) => {
             return <li key={ index } className="genres_genre">{ genre }</li>
           })}
         </ul>
-        <p className="movie_summary">{ summary }</p>
+        <p className="movie_summary">{ summary.slice(1, 140) }...</p>
       </div>      
     </div>
   );
